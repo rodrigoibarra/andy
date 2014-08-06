@@ -1,0 +1,17 @@
+lib-conv
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+_site
+pids
+logs
+results
+
+npm-debug.log
+node_modules
+_config-dev.yml
+.sass-cache
