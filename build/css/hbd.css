@@ -1,0 +1,71 @@
+/* line 1, ../../development/scss/hbd.scss */
+body {
+  background: #eeebdc;
+}
+
+/* line 4, ../../development/scss/hbd.scss */
+.map {
+  margin: 0 auto;
+  width: 790px;
+  height: 500px;
+  background: url("../img/map.png") no-repeat;
+}
+
+/* line 10, ../../development/scss/hbd.scss */
+.text {
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* line 14, ../../development/scss/hbd.scss */
+p {
+  font-size: 21px;
+  color: #3d3c37;
+  font-family: "ff-meta-web-pro",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+/* line 23, ../../development/scss/hbd.scss */
+img.me {
+  position: relative;
+  top: 190px;
+  left: 150px;
+}
+
+/* line 28, ../../development/scss/hbd.scss */
+img.you {
+  position: relative;
+  top: 120px;
+  left: 339px;
+}
+
+/* line 33, ../../development/scss/hbd.scss */
+h1 {
+  font-size: 26px;
+  font-family: "ff-meta-web-pro",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #3d3c37;
+  margin: 0 0 15px 0;
+}
+
+/* line 41, ../../development/scss/hbd.scss */
+h1 span.me {
+  color: #cb8ee2;
+}
+
+/* line 44, ../../development/scss/hbd.scss */
+h1 span.you {
+  color: #ffbf4b;
+}
+
+/* line 47, ../../development/scss/hbd.scss */
+h2 {
+  font-family: "ff-meta-web-pro",sans-serif;
+  color: #3d3c37;
+  font-style: normal;
+  font-weight: 400;
+}

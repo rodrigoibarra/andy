@@ -7,42 +7,49 @@ module.exports = function(grunt) {
 
     uglify: {
       build: {
-        src: ['_development/libs/*.js','_development/js/global.js'],
+        src: ['development/libs/*.js','development/js/global.js'],
         dest: 'build/js/global.min.js'
       }
     },
       compass: {                  // Task
         dist: {                   // Target
           options: {              // Target options
-            sassDir: '_development/scss/',
+            sassDir: 'development/scss/',
             cssDir: 'build/css/',
             environment: 'development'
           }
         }
       },
 
-      shell: {
-      jekyllServe: {
-        command: "jekyll serve --baseurl="
-      },
-      jekyllBuild: {
-        command: "jekyll build --config _config-dev.yml"
-      }
-    },
 
       watch: {
-           site: {
-            files: ["index.html", "_layouts/*.html", "rants/_posts/*.md", "_projects/*.md", "_includes/*.html"],
-            tasks: ["shell:jekyllBuild"]
-          },
           css: {
             files: ['**/*.scss', '*.html'],
-            tasks: ['compass', "shell:jekyllBuild"],
+            tasks: ['compass'],
+          },
+           svg: {
+              files: ["development/svg/*.svg"],
+              tasks: ["svgstore"]
+            },
             options: {
               livereload: true,
-            },
-          },
+            }
       },
+
+      svgstore: {
+      options: {
+        prefix : "shape-",
+        cleanup: false,
+        svg: {
+          style: "display: none;"
+        }
+      },
+      default: {
+        files: {
+          "build/img/svg-defs.svg": ["development/svg/*.svg"]
+        }
+      }
+    },
 
       connect: {
         uses_defaults: {}
@@ -52,7 +59,6 @@ module.exports = function(grunt) {
 
     require("load-grunt-tasks")(grunt);
   // Default task(s).
-    grunt.registerTask("serve", ["shell:jekyllServe"]);
-    grunt.registerTask('default', ['uglify', 'compass', "shell:jekyllBuild", "watch"]);
+    grunt.registerTask('default', ['uglify', 'compass', "watch"]);
 
 };

@@ -1,0 +1,52 @@
+body {
+  background: #eeebdc;
+  }
+.map {
+  margin: 0 auto;
+  width: 790px;
+  height: 500px;
+  background: url('../img/map.png') no-repeat;
+  }
+  .text{
+    width:800px;
+    margin:0 auto;
+  }
+p {
+  font-size: 21px;
+  color: #3d3c37;
+  font-family: "ff-meta-web-pro",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0;
+  margin:0 0 15px 0;
+  }
+  img.me {
+  position: relative;
+  top: 190px;
+  left: 150px;
+  }
+  img.you {
+  position: relative;
+  top: 120px;
+  left: 339px;
+  }
+  h1 {
+  font-size: 26px;
+  font-family: "ff-meta-web-pro",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #3d3c37;
+  margin:0 0 15px 0;
+  }
+    h1 span.me {
+    color: #cb8ee2;
+    }
+  h1 span.you {
+    color: #ffbf4b;
+    }
+  h2{
+      font-family: "ff-meta-web-pro",sans-serif;
+      color: #3d3c37;
+      font-style: normal;
+      font-weight: 400;
+    }

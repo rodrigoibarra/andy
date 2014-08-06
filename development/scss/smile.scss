@@ -1,0 +1,87 @@
+$morado: rgba(55, 35, 54, 1.0);
+$morado-claro: rgba(67, 46, 59, 1.0);
+$rojo: rgba(255, 80, 113, 1.0);
+
+body{
+  background: $morado;
+  font-size:100%;
+  color:white;
+}
+
+.lettering{
+  width:960px;
+  margin:0 auto;
+  text-align: center;
+	letter-spacing: .04em;
+	color: #fffff6;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+
+h1, h3{
+  color:white;
+  font-family: "uppercut-angle",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size:10em;
+  margin:0;
+  position:relative;
+  text-shadow:
+  0px .01em 0px $morado-claro,
+  0 .015em 0 $morado-claro,
+  0 .02em 0 $morado-claro,
+  0 .028em 0 $morado-claro,
+  0 .035em 0 $morado-claro,
+  0 .04em 0 $morado-claro,
+  0 .045em 0 $morado-claro,
+  0 .055em 0 $morado-claro,
+  0 .06em 0 $morado-claro,
+  0 .065em 0 $morado-claro,
+  0 .07em 0 $morado-claro,
+  0 .08em 0 $morado-claro,
+  0 .085em 0 $morado-claro,
+  0 .09em 0 $morado-claro,
+  0 .095em 0 $morado-claro,
+  0 .105em 0 $morado-claro,
+  0 .06em .06em $morado-claro ,
+  .07em .105em .04em $morado-claro,
+  -.02em .09em .05em $morado-claro,
+  -.03em .07em .065em $morado-claro,
+  -.075em .08em .09em $morado-claro,
+  -.09em .06em .195em $morado-claro;
+
+}
+h1{
+  bottom:-100px;
+  z-index:1;
+}
+
+h3{
+  bottom:120px;
+}
+h2{
+  color:$rojo;
+  font-family: "ff-market-web",cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size:8em;
+  margin:0;
+  z-index:50;
+  position:relative;
+}
+
+svg{
+  width:50px;
+  position:absolute;
+  left:48.7%;
+  top:35%;
+  z-index:7;
+}
+
+.signature{
+  color:$rojo;
+  font-family: "ff-market-web",cursive;
+  font-style: normal;
+  font-weight: 400;
+  text-align:right;
+}

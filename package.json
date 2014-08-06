@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/rodrigoibarra/rodrigoibarra.github.io.git"
+    "url": "git://github.com/rodrigoibarra/andy.git"
   },
   "bugs": {
-    "url": "https:///github.com/rodrigoibarra/rodrigoibarra.github.io/issues"
+    "url": "https:///github.com/rodrigoibarra/andy/issues"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
